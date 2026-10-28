@@ -5,39 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Phillip Coulson Psychotherapy</title>
   <style>
-    :root { --text:#2b2b2b; --bg:#ffffff; --muted:#6b6b6b; --light-grey:#e0e0dc; --dark-grey:#2a2829; }
+    :root { --text:#2b2b2b; --bg:#ffffff; --muted:#a9a9a5; --light-grey:#e0e0dc; --dark-grey:#2a2829; }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body { margin:0; font-family: Georgia, "Times New Roman", serif; color:var(--text); background:var(--bg); line-height:1.7; }
     a { color:inherit; }
- 
-    header { position:absolute; top:0; left:0; right:0; z-index:10; display:flex; justify-content:space-between; align-items:center; padding:24px 5vw; color:#fff; }
+
+    header { position:absolute; top:0; left:0; right:0; z-index:10; display:flex; justify-content:space-between; align-items:center; padding:24px 5vw; color:var(--light-grey); }
     header .site-title { font-size:1.15rem; letter-spacing:.04em; text-decoration:none; }
     header nav ul { list-style:none; margin:0; padding:0; display:flex; gap:28px; }
     header nav a { text-decoration:none; font-size:1rem; padding-bottom:3px; border-bottom:1px solid transparent; }
-    header nav a:hover, header nav a[aria-current="page"] { border-bottom-color:#fff; }
- 
+    header nav a:hover, header nav a[aria-current="page"] { border-bottom-color:var(--light-grey); }
+
     /* Banner image only: no text on top of it */
     .hero { position:relative; min-height:55vh; background:#1f2d25 url("./Resources/Forest.png") center/cover no-repeat; }
     .hero::before { content:""; position:absolute; inset:0; background:rgba(0,0,0,.25); }
- 
+
     /* Full-width colored bands; the inner .section-inner keeps the content centered */
     .section-light { background:var(--light-grey); color:var(--text); }
-    .section-dark { background:var(--dark-grey); color:#fff; }
+    .section-dark { background:var(--dark-grey); color:var(--light-grey); }
     .section-inner { max-width:820px; margin:0 auto; padding:48px 6vw 40px; }
     .section-dark .section-inner { max-width:1100px; padding-top:72px; padding-bottom:72px; }
- 
+
     .section-inner p { font-size:1.1rem; margin:0 0 1.4em; }
     .section-inner h2 { font-weight:400; font-size:clamp(1.6rem, 3.5vw, 2.2rem); margin:0 0 20px; }
- 
+
     .bio { display:flex; gap:40px; align-items:flex-start; flex-wrap:wrap; }
     .bio img { flex:0 1 380px; width:380px; max-width:100%; height:auto; border-radius:4px; }
     .bio .bio-text { flex:1 1 300px; }
- 
-    footer { text-align:center; padding:48px 5vw; background:var(--dark-grey); border-top:1px solid rgba(255,255,255,.15); color:rgba(255,255,255,.75); font-size:.95rem; }
+
+    footer { text-align:center; padding:48px 5vw; background:var(--dark-grey); border-top:1px solid rgba(255,255,255,.15); color:var(--muted); font-size:.95rem; }
     footer p { margin:6px 0; }
     footer .links a { margin:0 10px; }
- 
+
     @media (max-width:640px) {
       header { flex-direction:column; gap:10px; }
       header nav ul { gap:18px; }
@@ -45,7 +45,7 @@
   </style>
 </head>
 <body>
- 
+
   <header>
     <a class="site-title" href="index.html">Phillip Coulson Psychotherapy</a>
     <nav aria-label="Main">
@@ -56,26 +56,26 @@
       </ul>
     </nav>
   </header>
- 
+
   <div class="hero" role="img" aria-label="Forest"></div>
- 
+
   <main>
- 
+
     <section class="section-light">
       <div class="section-inner">
- 
+
         <h2>My approach to therapy</h2>
- 
+
         <p>Therapy is a place where gentle curiosity, sensitivity, and courage to face what is difficult can allow a powerful healing process to unfold.  It’s a place where you’re invited to bring yourself precisely as you are, especially if that’s messy, in-motion, or contradictory.  I will hold space for you to find and feel your feelings, connect with the experiential wisdom of your body, and experiment with language that expresses your truth. </p>
         <p>We all need connection to thrive.  So many of our wounds have their origin in relationship and are best healed in relationship.  Therapy is a wonderful opportunity to do just that, and to explore your relationship to intimacy and (dis)connection.  Beyond this, showing up as your authentic self and being seen, understood, and accepted is a powerful healing experience. </p>
         <p>Being a human is hard.  We all face a world that is at times painful, confusing, and cruel, and it’s up to us to figure out how to live.  How do we respond to the situation we find ourselves in?  How do we live in integrity with our truth and values when there are so many obstacles?  How do we accomplish our most cherished goals, and what even are those, exactly?  As an existential therapist, I will join you in these murky waters.  I will help you seek clarity and calm to live these challenging questions. </p>
- 
+
       </div>
     </section>
- 
+
     <section class="section-dark">
       <div class="section-inner">
- 
+
         <div class="bio">
           <img src="./Resources/Phillip.png" alt="Image of Phillip Coulson, Seattle Existential Somatic Therapist" />
           <div class="bio-text">
@@ -84,11 +84,11 @@
             <p>I am nonbinary, pan/bi, and white.  My work is informed by internal family systems, somatic, humanistic, and relational psychoanalytic techniques.  I strongly believe in the importance of practicing in a trauma-informed way and will help you learn to monitor your body to know when our work is too much - or too little.  My work is influenced by my interest in philosophy and its exploration of the human condition for millennia.  Similarly, my work is influenced by Buddhism and my practice of Vipassana meditation.  I strive to maintain a two hour daily meditation practice and have participated in or volunteered on more than 100 days of meditation retreats.</p>
           </div>
         </div>
- 
+
       </div>
     </section>
   </main>
- 
+
   <footer>
     <p>Phillip Coulson Psychotherapy PLLC</p>
     <p class="links">
@@ -97,6 +97,6 @@
     </p>
     <p><a href="mailto:phillip@phillipcoulsonpsychotherapy.com">phillip@phillipcoulsonpsychotherapy.com</a></p>
   </footer>
- 
+
 </body>
 </html>
